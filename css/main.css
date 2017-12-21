@@ -5,12 +5,19 @@ html {
 h1,
 h2,
 h3,
-h5 {
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
 h3 {
   text-transform: uppercase;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 h4 {
@@ -21,6 +28,34 @@ h4 {
   color: #347EA5;
 }
 
+.white {
+  color: #fff;
+}
+
+.button {
+  border: 1px solid #347EA5;
+  font-family: 'Montserrat', sans-serif;
+  padding: .7em 1.3em;
+  text-transform: uppercase;
+}
+
+.button-small {
+  border: 1px solid #347EA5;
+  font-family: 'Montserrat', sans-serif;
+  padding: .7em 1.2em;
+  text-transform: uppercase;
+}
+
+.button-blue {
+  color: #347EA5;
+  border-color: #347EA5;
+}
+
+.button-white {
+  color: #fff;
+  border-color: #fff;
+}
+
 body {
   margin: 0;
 }
@@ -29,6 +64,8 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 header {
@@ -60,8 +97,7 @@ nav a {
 	color: #fff;
 }
 nav a:hover {
-  background: #E5DAC0;
-  color: #FFF;
+  background: #1D516C;
 }
 
 nav li:last-child a {
@@ -76,6 +112,7 @@ nav li:last-child a {
   position: absolute;
   background: #347EA5;
   left: -240px;
+  z-index: 1;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -101,5 +138,31 @@ nav li:last-child a {
   left: 0;
 }
 
+/*BANNER*/
+.banner {
+  background: url(../images/banner.jpg) 70% center / cover no-repeat;
+  height: 425px;
+}
+
+.banner-content {
+  width: 100%;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /*INSTRUCTIONS*/
-.instructions
+.instructions {
+  background-color: #347EA5;
+}
+
+.instructions-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*DID YOU KNOW*/
+
+.did-you-know {
+  background-color: #F5F5F5;
+}
