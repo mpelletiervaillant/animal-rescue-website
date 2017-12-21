@@ -5,14 +5,26 @@ html {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blue {
+  color: #347EA5;
 }
 
 body {
   margin: 0;
 }
+/*NAVIGATION*/
 
 a {
   text-decoration: none;
@@ -88,3 +100,6 @@ nav li:last-child a {
 #menuToggle:checked ~ .menu {
   left: 0;
 }
+
+/*INSTRUCTIONS*/
+.instructions
