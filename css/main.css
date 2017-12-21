@@ -68,7 +68,6 @@ h4 {
   transition: all .35s;
 }
 
-
 body {
   margin: 0;
 }
@@ -86,7 +85,6 @@ header {
   height: 50px;
   margin: auto;
   border-bottom: 1px solid #EEE;
-  background-color: #347ea5;
 }
 
 #brand {
@@ -133,8 +131,8 @@ nav a:hover {
   padding: 10px 20px;
   color: #fff;
   cursor: pointer;
-  float: right;
-  margin: 6px 6px 0 0;
+  float: left;
+  margin-top: 6px;
   border-radius: 5px;
   width: 70px;
 }
@@ -155,7 +153,7 @@ nav a:hover {
 
 .banner-content {
   width: 100%;
-  top: 80px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.3);
