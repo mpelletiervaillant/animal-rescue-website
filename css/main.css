@@ -51,10 +51,23 @@ h4 {
   border-color: #347EA5;
 }
 
+.button-blue:hover {
+  background-color: #347ea5;
+  color: #fff;
+  transition: all .35s;
+}
+
 .button-white {
   color: #fff;
   border-color: #fff;
 }
+
+.button-white:hover {
+  background-color: #fff;
+  color: #347ea5;
+  transition: all .35s;
+}
+
 
 body {
   margin: 0;
@@ -99,10 +112,6 @@ nav a {
 nav a:hover {
   background: #1D516C;
 }
-
-nav li:last-child a {
-  border-bottom: none;
-  }
 
 /*-----------------------------------------*/
 
