@@ -1,0 +1,90 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  border-bottom: 1px solid #EEE;
+  background-color: #347ea5;
+}
+
+#brand {
+  float: left;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 0 0 6px;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: middle;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+nav a:hover {
+  background: #E5DAC0;
+  color: #FFF;
+}
+
+nav li:last-child a {
+  border-bottom: none;
+  }
+
+/*-----------------------------------------*/
+
+.menu {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  background: #347EA5;
+  left: -240px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.menu-icon {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  margin: 6px 6px 0 0;
+  border-radius: 5px;
+  width: 70px;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle:checked ~ .menu {
+  left: 0;
+}
