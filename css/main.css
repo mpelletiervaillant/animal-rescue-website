@@ -82,18 +82,21 @@ a {
 
 header {
   width: 100%;
-  height: 50px;
   margin: auto;
   border-bottom: 1px solid #EEE;
 }
 
 #brand {
-  float: left;
   color: #fff;
   font-size: 25px;
   margin: 0 0 0 6px;
   font-family: "Montserrat", sans-serif;
-  vertical-align: middle;
+  height: 60px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
 }
 
 nav {
@@ -132,7 +135,7 @@ nav a:hover {
   color: #fff;
   cursor: pointer;
   float: left;
-  margin-top: 6px;
+  margin-top: 11px;
   border-radius: 5px;
   width: 70px;
 }
@@ -153,7 +156,7 @@ nav a:hover {
 
 .banner-content {
   width: 100%;
-  top: 50px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.3);
@@ -168,8 +171,26 @@ nav a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+/*ADOPTION*/
+
+.harry-img {
+  transition: all .2s linear;
+}
+
+.harry-img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
 /*DID YOU KNOW*/
 
 .did-you-know {
   background-color: #F5F5F5;
+}
+
+/*FORM*/
+
+input,
+textarea {
+  border: 1px solid #e2e2e2;
 }
