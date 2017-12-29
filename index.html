@@ -8,7 +8,7 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 </head>
   <body>
     <ul class="skip-links">
@@ -32,22 +32,22 @@
           <ol class="list-group">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="adoptions.html">Adoptions</a></li>
+            <li><a href="rescues.html">Adoptions</a></li>
             <li><a href="#">Apply to Adopt</a></li>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="#">Foster</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="#">Contact</a></li>
           </ol>
         </nav>
-        <p class="white push-0">Ottawa Stray Cat Rescue</p>
-        <p class="white push-0">921 Wildcarrot Cres</p>
-        <p class="white push-0">Ottawa, ON</p>
-        <p class="white push-0">K1V 2M7</p>
+        <div class="nav-info">
+          <p class="white push-0">Ottawa Stray Cat Rescue</p>
+          <p class="white push-0">921 Wildcarrot Cres</p>
+          <p class="white push-0">Ottawa, ON</p>
+          <p class="white push-0">K1V 2M7</p>
+        </div>
       </div>
 
       <div class="masthead">
-        <div class="banner">
+        <div class="banner relative">
           <div class="banner-content absolute text-center gutter pad-t pad-b">
             <h1 class="white nina push-0">Save a life today</h1>
             <h2 class="white">Find the perfect new addition to your family</h2>
@@ -58,29 +58,52 @@
       </header>
 
     <main role="main" id="main">
-    <section id="description" class="text-center pad-t-2 pad-b-2" tabindex="0">
+    <section id="description" class="text-center pad-t-2 pad-b-2 island" tabindex="0">
       <div class="wrapper">
-      <h3 class="blue yotta">What we do</h3>
+      <h3 class="blue yotta pad-t-2">What we do</h3>
 
       <ul class="list-group">
-        <div class=" grid grid-middle">
-        <li class="about-card unit xs-1 s-1 m-1-2 l-1-3">
-          <img alt="">
-          <h4 class="blue push-1-2 mega gutter">Get adoptable cats off the streets and into homes</h4>
-          <p class="gutter">The stray cat problem in Ottawa is significant. So many of these animals are suitable for loving homes. We bring owners and pets together.</p>
+        <div class="grid grid-middle">
+
+        <li class="about-card unit xs-1 s-1 m-1 l-1-3 island">
+          <div class="grid grid-middle">
+            <div class="unit xs-1 s-1 m-1-3 l-1">
+              <i class="icon i-128"><img class="img-flex island about-icon" src="images/what-icon.svg" alt=""></i>
+            </div>
+            <div class="unit xs-1 s-1 m-2-3 l-1 about-text">
+              <h4 class="blue push-1-2 mega pad-t">Get adoptable cats off the streets and into homes</h4>
+              <p class="">The stray cat problem in Ottawa is significant. So many of these animals are suitable for loving homes. We bring owners and pets together.</p>
+            </div>
+          </div>
         </li>
 
-        <li class="about-card unit xs-1 s-1 m-1-2 l-1-3 push">
-          <img src="" alt="">
-          <h4 class="blue push-1-2 mega gutter">Manage stray colonies</h4>
-          <p class="gutter"> Feral cat colonies exist all over the city and are not managed, in part because there are no publicly accessible spay/neuter-and-release programs.</p>
+        <li class="about-card unit xs-1 s-1 m-1 l-1-3 island">
+          <div class="grid grid-middle">
+            <div class="unit xs-1 s-1 m-1-3 l-1">
+              <i class="icon i-128"><img class="img-flex island about-icon"src="images/how-icon.svg" alt=""></i>
+            </div>
+            <div class="unit xs-1 s-1 m-2-3 l-1 about-text">
+              <h4 class="blue push-1-2 mega pad-t">Manage stray colonies</h4>
+              <p class=""> Feral cat colonies exist all over the city and are not managed, in part because there are no publicly accessible spay/neuter-and-release programs.</p>
+          </div>
+        </div>
         </li>
 
-        <li class="about-card unit xs-1 s-1 m-1-2 l-1-3">
-          <img src="" alt=""><h4 class="blue push-1-2 mega">Foster stray cats</h4><p class="island-1-2"> We believe that any cat should have access to a loving home no matter their back story. We work closely will volunteers to help cats be adoption ready!</p>
+        <li class="about-card unit xs-1 s-1 m-1 l-1-3 island">
+          <div class="grid grid-middle">
+            <div class="unit xs-1 s-1 m-1-3 l-1">
+              <i class="icon i-128"><img class="img-flex island about-icon" src="images/what-icon.svg" alt=""></i>
+            </div>
+            <div class="unit xs-1 s-1 m-2-3 l-1 about-text">
+              <h4 class="blue push-1-2 mega pad-t">Foster stray cats</h4>
+              <p class=""> We believe that any cat should have access to a loving home no matter their back story. We work closely will volunteers to help cats be adoption ready!</p>
+            </div>
+          </div>
         </li>
-      </ul>
+      </div>
     </div>
+      </ul>
+
     </section>
 
     <section id="instructions" class="instructions text-center pad-t pad-b" tabindex="0">

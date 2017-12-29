@@ -1,5 +1,5 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 
 h1,
@@ -190,13 +190,13 @@ label.menu-icon:hover {
 
 /*BANNER*/
 .banner {
-  background: url(../images/banner.jpg) 70% center / cover no-repeat;
+  background: url(../images/banner.jpg) center bottom / cover no-repeat;
   height: 425px;
 }
 
 .banner-content {
   width: 100%;
-  top: 60px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.3);
@@ -209,9 +209,11 @@ label.menu-icon:hover {
 
 .about-card {
   background-color: #ffffff;
-  max-width: 275px;
-  margin: 0 auto;
-  margin-bottom: 1em;``
+  margin: 1em auto;
+}
+
+.about-icon {
+  border-bottom: 3px solid #347ea5;
 }
 
 /*INSTRUCTIONS*/
@@ -268,4 +270,85 @@ footer {
 .cat-card {
   max-width: 400px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 38em) {
+
+.banner {
+  height: 500px;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .nav-info {
+    display: none;
+  }
+
+  nav a {
+    display: block;
+    background-color: none;
+    color: #347EA5;
+    font-size: .8rem;
+    padding: 1em .5em;
+  }
+
+  nav li {
+    display: inline-block;
+    width: auto;
+  }
+
+  nav {
+    display: inline-block;
+    text-align: right;
+  }
+
+  ol {
+  display: inline-block;
+  }
+
+  .menu {
+    width: 70%;
+    height: 60px;
+    position: static;
+    background: #fff;
+    display: inline-block;
+    text-align: right;
+  }
+
+  label.menu-icon {
+    display: none;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  #brand {
+    display: inline-block;
+    height: auto;
+    width: 25%;
+    padding-left: .5em;
+  }
+
+  .logo {
+    float: left;
+    width: 275px;
+  }
+
+  .banner {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .about-card {
+    width: 275px;
+    margin: .5em;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
 }
