@@ -24,12 +24,20 @@ h4 {
   font-family: 'Open Sans', sans-serif;
 }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .blue {
   color: #347EA5;
 }
 
 .white {
   color: #fff;
+}
+
+.grey-back {
+  background-color: #f5f5f5;
 }
 
 .button {
@@ -71,13 +79,21 @@ h4 {
 body {
   margin: 0;
 }
-/*NAVIGATION*/
 
 a {
   text-decoration: none;
+}
+/*NAVIGATION*/
+
+nav a {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.03);
 }
 
 header {
@@ -96,7 +112,14 @@ header {
 }
 
 .logo {
-  width: 150px;
+  margin-top: 25px;
+  width: 225px;
+  transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 nav {
@@ -130,18 +153,35 @@ nav a:hover {
   -o-transition: all .3s ease-in-out;
 }
 
-.menu-icon {
-  padding: 10px 20px;
+label.menu-icon {
+  padding: 10px 10px;
   color: #fff;
   cursor: pointer;
   float: left;
   margin-top: 11px;
   border-radius: 5px;
-  width: 70px;
+  width: 44px;
+  transition: all .2s ease-in-out;
+}
+
+label img.open {
+  transition: all .2s ease-in-out;
+}
+
+label.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.close {
+  display: none;
 }
 
 #menuToggle {
   display: none;
+}
+
+#menuToggle:checked ~ label img.open {
+  transform: rotate(90deg);
 }
 
 #menuToggle:checked ~ .menu {
@@ -162,6 +202,18 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*WHAT WE DO*/
+#description {
+  background-color: #F5F5F5;
+}
+
+.about-card {
+  background-color: #ffffff;
+  max-width: 275px;
+  margin: 0 auto;
+  margin-bottom: 1em;``
+}
+
 /*INSTRUCTIONS*/
 .instructions {
   background-color: #347EA5;
@@ -173,11 +225,11 @@ nav a:hover {
 
 /*ADOPTION*/
 
-.harry-img {
+.cat-img {
   transition: all .2s linear;
 }
 
-.harry-img:hover {
+.cat-img:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -192,5 +244,28 @@ nav a:hover {
 
 input,
 textarea {
-  border: 1px solid #e2e2e2;
+  border: 1px solid #D6D6D6;
+  background-color: #FCFCFC;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #F5F5F5;
+}
+
+.sm-icon {
+  margin: 0 .5em;
+}
+
+/*---------ADOPTIONS PAGE-----------*/
+
+.adoption-banner {
+  background: url(../images/adoptions-banner.jpg) 70% center / cover no-repeat;
+  height: 375px;
+}
+
+.cat-card {
+  max-width: 400px;
+  margin: 0 auto;
 }
