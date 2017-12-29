@@ -296,16 +296,10 @@ footer {
 
   nav li {
     display: inline-block;
-    width: auto;
   }
 
   nav {
-    display: inline-block;
     text-align: right;
-  }
-
-  ol {
-  display: inline-block;
   }
 
   .menu {
@@ -314,7 +308,7 @@ footer {
     position: static;
     background: #fff;
     display: inline-block;
-    text-align: right;
+
   }
 
   label.menu-icon {
@@ -330,11 +324,6 @@ footer {
     height: auto;
     width: 25%;
     padding-left: .5em;
-  }
-
-  .logo {
-    float: left;
-    width: 275px;
   }
 
   .banner {
