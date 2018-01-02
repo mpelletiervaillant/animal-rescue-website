@@ -1,5 +1,5 @@
 html {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -21,7 +21,7 @@ h2 {
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .montserrat {
@@ -204,12 +204,7 @@ label.menu-icon:hover {
 
 /*WHAT WE DO*/
 #description {
-  background-color: #F5F5F5;
-}
 
-.about-card {
-  background-color: #ffffff;
-  margin: 1em auto;
 }
 
 .about-icon {
@@ -272,6 +267,22 @@ footer {
   margin: 0 auto;
 }
 
+/*---------APPLY PAGE-----------*/
+
+.border-btm {
+  border-bottom: 1px solid #95989A;
+}
+
+.price-card {
+  border: 5px solid #347ea5;
+  border-radius: 10px;
+}
+
+.price-icon {
+  max-width: 235px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 38em) {
 
 .banner {
@@ -327,14 +338,9 @@ footer {
   }
 
   .banner {
-    height: 600px;
+    height: 500px;
     overflow: hidden;
-  }
-
-  .about-card {
-    width: 275px;
-    margin: .5em;
-  }
+}
 
   .about-text {
     text-align: center;
