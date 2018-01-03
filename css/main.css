@@ -40,39 +40,29 @@ h4 {
   background-color: #f5f5f5;
 }
 
-.button {
-  border: 1px solid #347EA5;
-  font-family: 'Montserrat', sans-serif;
-  padding: .7em 1.3em;
-  text-transform: uppercase;
-}
-
-.button-small {
+.btn {
   border: 1px solid #347EA5;
   font-family: 'Montserrat', sans-serif;
   padding: .7em 1.2em;
   text-transform: uppercase;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
-.button-blue {
+.btn:hover {
+  background-color: #fff;
+  color: #347ea5;
+  transition: all .35s;
+}
+
+.btn-ghost {
   color: #347EA5;
   border-color: #347EA5;
 }
 
-.button-blue:hover {
+.btn-ghost:hover {
   background-color: #347ea5;
   color: #fff;
-  transition: all .35s;
-}
-
-.button-white {
-  color: #fff;
-  border-color: #fff;
-}
-
-.button-white:hover {
-  background-color: #fff;
-  color: #347ea5;
   transition: all .35s;
 }
 
@@ -134,7 +124,7 @@ nav a {
 	color: #fff;
 }
 nav a:hover {
-  background: #1D516C;
+  opacity: .7;
 }
 
 /*-----------------------------------------*/
@@ -176,15 +166,15 @@ label.menu-icon:hover {
   display: none;
 }
 
-#menuToggle {
+#menutoggle {
   display: none;
 }
 
-#menuToggle:checked ~ label img.open {
+#menutoggle:checked ~ label img.open {
   transform: rotate(90deg);
 }
 
-#menuToggle:checked ~ .menu {
+#menutoggle:checked ~ .menu {
   left: 0;
 }
 
@@ -203,9 +193,6 @@ label.menu-icon:hover {
 }
 
 /*WHAT WE DO*/
-#description {
-
-}
 
 .about-icon {
   border-bottom: 3px solid #347ea5;
@@ -269,6 +256,11 @@ footer {
 
 /*---------APPLY PAGE-----------*/
 
+.apply-banner {
+  background: url(../images/apply-banner.jpg) center bottom / cover no-repeat;
+  height: 425px;
+}
+
 .border-btm {
   border-bottom: 1px solid #95989A;
 }
@@ -289,6 +281,9 @@ footer {
   height: 500px;
 }
 
+.cat-card {
+  max-width: 1000px;
+}
 }
 
 @media only screen and (min-width: 60em) {
@@ -346,4 +341,26 @@ footer {
     text-align: center;
   }
 
+  .adoption-banner {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .apply-banner {
+    height: 500px;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .adoption-banner {
+    height: 600px;
+  }
+
+  .apply-banner {
+    height: 550px;
+      background: url(../images/apply-banner.jpg) center center / cover no-repeat;
+  }
 }
