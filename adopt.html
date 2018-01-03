@@ -68,8 +68,7 @@
             <h3 class="yotta blue pad-t-2">Adoption Fees</h3>
             <p>This page is dedicated to promoting our current list of animals for adoption. You will find a brief description about their personality and more information on the cats. If you wish to apply to adopt.</p>
           </div>
-        <ul class="list-group">
-          <div class="grid text-center">
+        <ul class="list-group grid text-center">
             <li class="island-1-2 unit xs-1 s-1 m-1-2 l-1-4 push">
               <div class="price-card island gutter">
                 <i><img class="img-flex border-btm pad-b price-icon" src="images/200.svg" alt="200 dollars"></i>
@@ -174,8 +173,8 @@
             </div>
 
             <div class="push">
-              <label for="name">Last Name</label>
-              <input id="name" name="name">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last-name">
             </div>
 
             <div class="push">
@@ -191,11 +190,6 @@
             <div class="push">
               <label for="address">Address</label>
               <input id="address" type="text"  name="address">
-            </div>
-
-            <div class="push">
-              <label for="city">City</label>
-              <input id="city" type="text"  name="city">
             </div>
 
             <div class="push">
@@ -237,7 +231,7 @@
               <label for="where" class="">If you are a student or employee, please indicate where:</label>
               <textarea id="where" name="where"></textarea>
             </div>
-
+          </fieldset>
             <fieldset>
               <legend>Do you currently own any pets?</legend>
                 <input type="radio" id="yes" name="any-pets">
@@ -247,18 +241,18 @@
                 <label for="no">No</label>
 
                 <div class="">
-                  <label for="details" class="">If yes please list their name, type, breed, age, dates for their last vaccinations, and if they are sterilized.</label>
-                  <textarea id="details" name="message"></textarea>
+                  <label for="current-pets" class="">If yes please list their name, type, breed, age, dates for their last vaccinations, and if they are sterilized.</label>
+                  <textarea id="current-pets" name="current-pets"></textarea>
                 </div>
             </fieldset>
 
             <fieldset>
               <legend>Do you have any children?</legend>
-                <input type="radio" id="yes" name="children">
-                <label for="yes">Yes</label>
+                <input type="radio" id="yes-1" name="children">
+                <label for="yes-1">Yes</label>
 
-                <input type="radio" id="no" name="children">
-                <label for="no">No</label>
+                <input type="radio" id="no-1" name="children">
+                <label for="no-1">No</label>
 
                 <div class="">
                   <label for="details" class="">How old are they?</label>
@@ -266,13 +260,141 @@
                 </div>
             </fieldset>
 
+<h3>Pet Care</h3>
+            <fieldset class="">
+
+              <legend class="giga push">What methods would you use to train your cat?</legend>
+
+              <div class="grid">
+                <div class="push unit xs-1 m-1-2">
+
+                <div class="push 1-4">
+                  <input type="checkbox" id="bottle" name="bottle">
+                  <label for="bottle">Spray Bottle</label>
+                </div>
+
+
+                  <div class="push-1-4">
+                    <input id="nose" type="checkbox">
+                    <label for="nose">Tap on the nose</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="reinforcement" type="checkbox">
+                    <label for="reinforcement">Positive Reinforcement</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="treats" type="checkbox">
+                    <label for="treats">Treats and Rewards</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="point" type="checkbox">
+                    <label for="point">"No!" and point</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="clicker" type="checkbox">
+                    <label for="clicker">Clicker Training</label>
+                  </div>
+
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Do you currently have a veterinarian?</legend>
+                <input type="radio" id="yes-3" name="any-pets">
+                <label for="yes-3">Yes</label>
+
+                <input type="radio" id="no-3" name="any-pets">
+                <label for="no-3">No</label>
+            </fieldset>
+
+            <fieldset class="">
+              <legend>How often should your cat see a veterinarian?</legend>
+                <input type="radio" id="years" name="vet">
+                <label for="years">Once every 3 years</label>
+
+                <input type="radio" id="sick" name="vet">
+                <label for="sick">When Sick</label>
+
+                <input type="radio" id="twice" name="vet">
+                <label for="twice">Twice per years</label>
+
+                <input type="radio" id="annual" name="vet">
+                <label for="annual">Annually</label>
+
+                <input type="radio" id="month" name="vet">
+                <label for="month">Monthly</label>
+            </fieldset>
+
+            <fieldset>
+              <legend class="giga push">What methods would you use to train your new cat?</legend>
+
+              <div class="grid">
+                <div class="push unit xs-1 m-1-2">
+
+                <div class="push 1-4">
+                  <input type="checkbox" id="bottle" name="bottle">
+                  <label for="bottle">Spray Bottle</label>
+                </div>
+
+
+                  <div class="push-1-4">
+                    <input id="nose" type="checkbox">
+                    <label for="nose">Tap on the nose</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="reinforcement" type="checkbox">
+                    <label for="reinforcement">Positive Reinforcement</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="treats" type="checkbox">
+                    <label for="treats">Treats and Rewards</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="point" type="checkbox">
+                    <label for="point">"No!" and point</label>
+                  </div>
+
+                  <div class="push-1-4">
+                    <input id="clicker" type="checkbox">
+                    <label for="clicker">Clicker Training</label>
+                  </div>
+
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="">
+              <legend>How much do you think you'll spend annually on your cat?</legend>
+                <input type="radio" id="100" name="money">
+                <label for="100">$100-$500</label>
+
+                <input type="radio" id="500" name="money">
+                <label for="500">$500-$1000</label>
+
+                <input type="radio" id="1000" name="money">
+                <label for="1000">$1000-$1500</label>
+
+                <input type="radio" id="1500" name="money">
+                <label for="1500">$1500+</label>
+            </fieldset>
+
+            <h3>Your Home</h3>
+
             <fieldset>
               <legend>Is anyone in your household allergic to cats?</legend>
-                <input type="radio" id="yes" name="allergies">
-                <label for="yes">Yes</label>
+                <input type="radio" id="yes-2" name="allergies">
+                <label for="yes-2">Yes</label>
 
-                <input type="radio" id="no" name="allergies">
-                <label for="no">No</label>
+                <input type="radio" id="no-2" name="allergies">
+                <label for="no-2">No</label>
             </fieldset>
 
             <div class="">
@@ -286,12 +408,12 @@
             </div>
 
             <div class="">
-              <label for="household" class="">What is your pimary reason for adoption?</label>
-              <textarea id="household" name="household"></textarea>
+              <label for="reason" class="">What is your pimary reason for adoption?</label>
+              <textarea id="reason" name="reason"></textarea>
             </div>
 
             <div class="four push">What type of dwelling do you live in?</label>
-              <select id="fitness" name="physical fitness">
+              <select id="dwelling" name="dwelling">
                 <option>Apartment</option>
                 <option>House</option>
                 <option>Condo</option>
@@ -310,13 +432,60 @@
             </div>
 
             <div class="four push">Please indicate if you are seeking a cat that is</label>
-              <select id="fitness" name="physical fitness">
+              <select id="seek" name="seek">
                 <option>Indoor only</option>
                 <option>Indoor only with supervised outdoor access</option>
                 <option>Indoor / Outdoor</option>
                 <option>Outdoor Only / Barn Cat</option>
               </select>
             </div>
+
+            <fieldset>
+              <legend>It is very important for my cat to...</legend>
+              <div class="push 1-4">
+                <input type="checkbox" id="children" name="search">
+                <label for="children">Be friendly with children</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="visitors" name="search">
+                <label for="visitors">Be friendly with a visitor</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="playful" name="search">
+                <label for="playful">Be playful</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="other-cats" name="search">
+                <label for="other-cats">Be friendly with other cats</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="held" name="search">
+                <label for="held">Enjoy being held</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="quiet" name="search">
+                <label for="quiet">Be quiet</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="dogs" name="search">
+                <label for="dogs">Be friendly with dogs</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="calm" name="search">
+                <label for="calm">Be calm</label>
+              </div>
+
+              <div class="push 1-4">
+                <input type="checkbox" id="independant" name="search">
+                <label for="independant">Be independant</label>
+              </div>
 
             <div class="">
               <label for="household" class="">Tell us why you would be a suitable home for a cat.</label>
