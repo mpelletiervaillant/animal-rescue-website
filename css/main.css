@@ -13,7 +13,7 @@ h6 {
 h1,
 h2,
 h3 {
-  text-transform: uppercase;
+
 }
 
 h2 {
@@ -41,28 +41,32 @@ h4 {
 }
 
 .btn {
-  border: 1px solid #347EA5;
-  font-family: 'Montserrat', sans-serif;
   padding: .7em 1.2em;
-  text-transform: uppercase;
   border: 2px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-white {
   color: #fff;
 }
 
-.btn:hover {
+.btn-blue {
+  border-color: #347ea5;
+  color: #347ea5;
+}
+
+.btn-white:hover {
   background-color: #fff;
   color: #347ea5;
+  border-color: #fff;
   transition: all .35s;
 }
 
-.btn-ghost {
-  color: #347EA5;
-  border-color: #347EA5;
-}
-
-.btn-ghost:hover {
+.btn-blue:hover {
   background-color: #347ea5;
   color: #fff;
+  border-color: #347ea5;
   transition: all .35s;
 }
 
@@ -73,6 +77,12 @@ body {
 a {
   text-decoration: none;
 }
+
+header  [type="checkbox"]#menutoggle + label::before {
+  position: absolute;
+  left: -1000000px;
+}
+
 /*NAVIGATION*/
 
 nav a {
