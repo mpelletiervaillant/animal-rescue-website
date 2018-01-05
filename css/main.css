@@ -49,25 +49,27 @@ h4 {
 
 .btn-white {
   color: #fff;
+  transition: all .35s ease-in-out;
 }
 
 .btn-blue {
   border-color: #347ea5;
   color: #347ea5;
+  transition: all .35s ease-in-out;
 }
 
 .btn-white:hover {
   background-color: #fff;
   color: #347ea5;
   border-color: #fff;
-  transition: all .35s;
+  transform: scale(1.03);
 }
 
 .btn-blue:hover {
   background-color: #347ea5;
   color: #fff;
   border-color: #347ea5;
-  transition: all .35s;
+  transform: scale(1.03);
 }
 
 body {
@@ -237,9 +239,11 @@ label.menu-icon:hover {
 /*FORM*/
 
 input,
-textarea {
-  border: 1px solid #D6D6D6;
+textarea,
+select {
+  border: 1px solid #347ea5;
   background-color: #FCFCFC;
+  display: inline-block;
 }
 
 /*FOOTER*/
