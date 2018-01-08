@@ -64,6 +64,20 @@ header [type="checkbox"]#menutoggle + label::before {
 
 /* NAVIGATION */
 
+.menu {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: -240px;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
 nav a {
   display: block;
   padding: 15px 0;
@@ -74,7 +88,6 @@ nav a {
 }
 
 nav a:hover {
-  transform: scale(1.03);
   background-color: #000;
   color: #fff;
 }
@@ -95,20 +108,6 @@ nav {
 }
 
 /* ----------------------------------------- */
-
-.menu {
-  width: 240px;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-  left: -240px;
-  z-index: 1;
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-}
 
 label.menu-icon {
   padding: 10px;
@@ -273,14 +272,10 @@ footer p {
 
 @media only screen and (min-width: 60em) {
 
-  .nav-info {
-    display: none;
-  }
-
   nav a {
     display: block;
     background-color: #fff;
-    color: #347ea5;
+    color: #000;
     padding: 1em .5em;
   }
 
