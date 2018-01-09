@@ -252,7 +252,7 @@ footer p {
 /* ---------ADOPTIONS PAGE----------- */
 
 .adoption-banner {
-  background: url("../images/adoptions-banner.jpg") center bottom / cover no-repeat;
+  background: url("../images/adoptions-banner.jpg") center center / cover no-repeat;
   height: 500px;
 }
 
@@ -368,8 +368,8 @@ fieldset {
     border-bottom: 3px solid #347ea5;
   }
 
-  .adopt-banner {
-    height: 500px;
+  .adoption-banner {
+    height: 600px;
     overflow: hidden;
   }
 
