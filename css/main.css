@@ -32,11 +32,17 @@ h6 {
 
 .btn-banner {
   padding: .7em 1.2em;
-  background-color: #fff;
   color: #000;
-  border: 1px solid #347ea5;
+  background-color: #fff;
   text-decoration: none;
   border-radius: 8px;
+  transition: all .35s ease-in-out;
+}
+
+.btn-banner:hover {
+  transform: scale(1.08);
+  color: #fff;
+  background-color: #347ea5;
 }
 
 .btn {
@@ -246,8 +252,8 @@ footer p {
 /* ---------ADOPTIONS PAGE----------- */
 
 .adoption-banner {
-  background: url("../images/adoptions-banner.jpg") 70% center / cover no-repeat;
-  height: 375px;
+  background: url("../images/adoptions-banner.jpg") center bottom / cover no-repeat;
+  height: 500px;
 }
 
 .cat-card {
@@ -258,7 +264,7 @@ footer p {
 /* ---------APPLY PAGE----------- */
 
 .apply-banner {
-  background: url("../images/apply-banner.jpg") center bottom / cover no-repeat;
+  background: url("../images/apply-banner.jpg") 70% center / cover no-repeat;
   height: 425px;
 }
 
@@ -362,13 +368,13 @@ fieldset {
     border-bottom: 3px solid #347ea5;
   }
 
-  .adoption-banner {
+  .adopt-banner {
     height: 500px;
     overflow: hidden;
   }
 
   .apply-banner {
-    height: 500px;
+    height: 550px;
     overflow: hidden;
   }
 

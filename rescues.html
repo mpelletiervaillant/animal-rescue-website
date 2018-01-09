@@ -9,8 +9,8 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="apple-touch-icon" href="images/favicon-196.png">
-  <link href="images/favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="favicon-196.png">
+  <link href="favicon.ico" rel="shortcut icon">
 </head>
 <body>
   <ul class="skip-links">
@@ -18,7 +18,7 @@
     <li><a href="#main">Jump to main content</a></li>
   </ul>
   <header role="banner">
-    <input type="checkbox" id="menutoggle">
+    <input type="checkbox" id="menutoggle" required>
     <label for="menutoggle" class="menu-icon">
       <img class="img-flex open" src="images/drop-down.svg" alt="Drop down menu">
     </label>
@@ -51,7 +51,7 @@
     <div class="masthead">
       <div class="adoption-banner relative">
         <div class="banner-content absolute text-center gutter pad-t pad-b">
-          <h1 class="white nina push-0">Adoptions</h1>
+          <h1 class="white nina push-0">Rescues</h1>
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@
             </div>
           </li>
 
-          <li class="unit xs-1 pad-t-2">
+          <li class="unit xs-1 pad-t-2 pad-b-2">
             <div class="grid grid-middle wrapper cat-card">
               <div class="unit xs-1 s-1 m-1-2 gutter">
                 <img class="img-flex pad-t pad-b" src="images/gizmo.jpg" alt="Image of Juno the white and grey cat">
@@ -222,30 +222,7 @@
         </ul>
       </div>
     </section>
-    <section>
-      <h2 class="blue yotta text-center pad-t-2">Contact Us</h2>
-      <form class="wrapper grid gutter text-center pad-b-2" method="POST" action="https://formspree.io/melanypvdesigns@gmail.com">
 
-        <div class="push text-left half unit xs-1 s-1 m-1-2 gutter-1-4">
-          <label for="name" class="push-1-2">Name</label>
-          <input id="name" name="name">
-        </div>
-
-        <div class="push text-left unit xs-1 s-1 m-1-2 gutter-1-4">
-          <label for="email" class="push-1-2">E-mail</label>
-          <input id="email" type="email" name="email">
-        </div>
-
-        <div class="push text-left unit xs-1 s-1 m-1 l-1 gutter-1-4">
-          <label for="details" class="push-1-2">Message</label>
-          <textarea id="details" name="message" required></textarea>
-        </div>
-        <div class="unit xs-1 s-1 m-1 l-1">
-          <button class="btn btn-ghost micro push" type="submit">Send Message</button>
-        </div>
-
-      </form>
-    </section>
   </main>
   <footer role="contentinfo">
     <div class="text-center grid pad-t">

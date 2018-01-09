@@ -9,8 +9,8 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
-  <link rel="apple-touch-icon" href="images/favicon-196.png">
-  <link href="images/favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="favicon-196.png">
+  <link href="favicon.ico" rel="shortcut icon">
 </head>
 <body>
   <ul class="skip-links">
@@ -51,7 +51,11 @@
     </div>
 
     <div class="masthead">
-      <h1 class="nina push-0 text-center blue pad-t">Apply for adoption</h1>
+      <div class="apply-banner relative">
+        <div class="banner-content absolute text-center gutter pad-t pad-b">
+          <h1 class="white nina push-0">Apply for Adoption</h1>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -177,7 +181,7 @@
 
             <div class="push gutter-1-4 unit xs-1 s-1 m-1-2 l-1-2">
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="me@me.com" name="email" required>
+              <input id="email" type="email" placeholder="me@me.com" aria-label="enter e-mail" name="email" required>
             </div>
 
             <div class="push gutter-1-4 unit xs-1 s-1 m-1-2 l-1-2">
@@ -243,11 +247,14 @@
               <input type="radio" id="first-no" name="pets">
               <label for="first-no">No</label>
             </div>
+          </div>
+        </fieldset>
 
-            <div class="unit xs-1 s-1 m-1 l-2-3">
-              <label for="current-pets">If yes please list their name, type, breed, age, dates for their last vaccinations, and if they are sterilized.</label>
-              <textarea id="current-pets" name="current-pets"></textarea>
-            </div>
+        <fieldset>
+          <legend>Please fill out these text boxes.</legend>
+          <div class="unit xs-1 s-1 m-1 l-2-3">
+            <label for="current-pets">If yes please list their name, type, breed, age, dates for their last vaccinations, and if they are sterilized.</label>
+            <textarea id="current-pets" name="current-pets"></textarea>
           </div>
         </fieldset>
 
@@ -371,7 +378,11 @@
               <input type="radio" id="second-no" name="second-pets">
               <label class="gutter-1-4" for="second-no">No</label>
             </div>
-
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Please fill out the text boxes.</legend>
+          <div class="grid">
             <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
               <label for="daily-care">Who will be responsible for the cat's daily care?</label>
               <textarea id="daily-care" name="daily-care"></textarea>
@@ -490,25 +501,7 @@
   <footer role="contentinfo">
     <div class="text-center pad-t grid">
 
-      <div class="unit xs-1">
-        <ul class="list-group text-center pad-t">
-          <li class="ib gutter-1-4">
-            <a class="ib" href="https://www.facebook.com/OttawaStrayCatRescue/">
-              <div class="embed embed-1by1 sm-icon ib">
-                <img class="embed-item" src="images/facebook.svg" alt="Link to Facebook">
-              </div>
-            </a>
-          </li>
 
-          <li class="ib gutter-1-4">
-            <a class="ib" href="https://www.instagram.com/harrisontheorangecat">
-              <div class="embed embed-1by1 sm-icon ib">
-                <img class="embed-item" src="images/instagram.svg" alt="Link to Instagram">
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
       <div class="unit xs-1">
         <p class="push-0">Ottawa Stray Cat Rescue</p>
         <p class="push-0">921 Wildcarrot Cres</p>
