@@ -26,35 +26,49 @@ h6 {
   background-color: #f5f5f5;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.btn-banner {
+  padding: .7em 1.2em;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #347ea5;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
 .btn {
   padding: .7em 1.2em;
   border: 1px solid #fff;
   font-family: Montserrat, sans-serif;
 }
 
-.btn-white {
-  color: #fff;
+.btn-ghost {
+  border: 1px solid #347ea5;
   transition: all .35s ease-in-out;
+  background-color: #fff;
 }
 
-.btn-blue {
+.btn-ghost:hover {
+  background-color: #347ea5;
   border-color: #347ea5;
-  color: #347ea5;
-  transition: all .35s ease-in-out;
+  color: #fff;
+  transform: scale(1.08);
 }
 
-.btn-white:hover {
+.btn-ghost-white {
+  border: 1px solid #fff;
+  transition: all .35s ease-in-out;
+  background-color: #347ea5;
+}
+
+.btn-ghost-white:hover {
+  border: 1px solid #fff;
+  transform: scale(1.05);
   background-color: #fff;
   color: #347ea5;
-  border-color: #fff;
-  transform: scale(1.03);
-}
-
-.btn-blue:hover {
-  background-color: #347ea5;
-  color: #fff;
-  border-color: #347ea5;
-  transform: scale(1.03);
 }
 
 header [type="checkbox"]#menutoggle + label::before {
@@ -70,6 +84,7 @@ header [type="checkbox"]#menutoggle + label::before {
   position: absolute;
   background-color: white;
   left: -240px;
+  border: 1px solid black;
   z-index: 1;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -88,7 +103,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #000;
+  background-color: #347ea5;
   color: #fff;
 }
 
@@ -199,16 +214,17 @@ select {
   border: 1px solid #347ea5;
   background-color: #fcfcfc;
   display: inline-block;
+  border-radius: 5px;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #347ea5;
+  background-color: #f5f5f5;
 }
 
 footer p {
-  color: #fff;
+  color: #000;
 }
 
 .logo-footer {
@@ -216,8 +232,11 @@ footer p {
 }
 
 .sm-icon {
-  margin: 0 .5em;
-  transition: all .25s ease-in-out;
+  width: 32px;
+}
+
+.social-media {
+  width: 32px;
 }
 
 .sm-icon:hover {
@@ -258,6 +277,10 @@ footer p {
   margin: 0 auto;
 }
 
+fieldset {
+  border: none;
+}
+
 @media only screen and (min-width: 38em) {
 
   .banner {
@@ -266,6 +289,20 @@ footer p {
 
   .cat-card {
     max-width: 1000px;
+  }
+
+  .about-icon {
+    border: none;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .middle {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
   }
 
 }
@@ -277,10 +314,15 @@ footer p {
     background-color: #fff;
     color: #000;
     padding: 1em .5em;
+    border: none;
   }
 
   nav li {
     display: inline-block;
+  }
+
+  .nav-info {
+    display: none;
   }
 
   nav {
@@ -293,6 +335,7 @@ footer p {
     position: static;
     background: #fff;
     display: inline-block;
+    border: none;
   }
 
   label.menu-icon {
@@ -313,6 +356,10 @@ footer p {
 
   .about-text {
     text-align: center;
+  }
+
+  .about-icon {
+    border-bottom: 3px solid #347ea5;
   }
 
   .adoption-banner {
