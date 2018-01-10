@@ -45,10 +45,26 @@ h6 {
   background-color: #347ea5;
 }
 
+.btn-instructions {
+  padding: .7em 1.2em;
+  border: 1px solid #fff;
+  font-family: Montserrat, sans-serif;
+  transition: all .35s ease-in-out;
+}
+
+.btn-instructions:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+  transform: scale(1.08);
+}
+
 .btn {
   padding: .7em 1.2em;
   border: 1px solid #fff;
   font-family: Montserrat, sans-serif;
+  background-color: #fff;
+  color: #000;
 }
 
 .btn-ghost {
@@ -206,6 +222,10 @@ label.menu-icon:hover {
   cursor: pointer;
 }
 
+.border {
+  border: 2px solid #347ea5;
+}
+
 /* DID YOU KNOW */
 
 .did-you-know {
@@ -243,6 +263,10 @@ footer p {
 
 .social-media {
   width: 32px;
+}
+
+.copyright {
+  background-color: #c3c3c3;
 }
 
 .sm-icon:hover {
