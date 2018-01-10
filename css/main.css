@@ -359,6 +359,11 @@ fieldset {
     text-align: right;
   }
 
+  nav a {
+    display: block;
+    padding: .5em .75em;
+}
+
   .menu {
     width: 70%;
     height: 60px;
