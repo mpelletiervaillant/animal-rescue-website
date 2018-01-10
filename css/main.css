@@ -345,6 +345,7 @@ fieldset {
     color: #000;
     padding: 1em .5em;
     border: none;
+    padding: .5em .75em;
   }
 
   nav li {
@@ -358,11 +359,6 @@ fieldset {
   nav {
     text-align: right;
   }
-
-  nav a {
-    display: block;
-    padding: .5em .75em;
-}
 
   .menu {
     width: 70%;
